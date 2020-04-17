@@ -1,0 +1,95 @@
+{% extends 'main_app/index_nav.html' %}
+
+{% block content %}
+{% for p in page %}
+<div class="container">
+  
+  <div class="card text-center mt-4">
+  <div class="card-header float-left">
+    <div class="row d-flex justify-content-between">
+      {% if p.1 %}
+      <p>FOR SALE</p>
+      {% else %}
+        <p>FREE CONTENT</p>
+      {% endif %}
+
+    
+        <p>AUTHOR-{{p.6}}</p>
+      
+    </div>
+    
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">{{p.3}}</h5>
+    <p class="card-text">{{p.4}}</p>
+    
+    {% if p.6 == author %}
+      <div class="row d-flex justify-content-center">
+          <a href="{% url 'get_post' p.0 %}" class="btn btn-primary">READ YOUR BLOG</a>
+      </div>
+    {% else %}
+      <div class="row d-flex justify-content-between">
+            <a href="url 'payment' p.0" class="btn btn-primary">TIP THE AUTHOR</a>
+    {% if p.1 %}
+      <a href="{% url 'payment' p.0 %}" class="btn btn-primary">BUY CONTENT</a>
+    {% else %}
+      <a href="{% url 'get_free_post' p.0 %}" class="btn btn-primary">READ FOR FREE</a>
+    {% endif %}
+    </div>
+    {% endif %}
+    
+  </div>
+<!--   <div class="card-footer text-muted">
+    AUTHOR-{{p.3}}
+  </div>  -->  
+  <div class="card-footer text-muted">
+    ETHER EARNED-{{p.2}}
+  </div>         
+    <div>
+    <p class="text-white bg-dark">BOB</p>
+  </div>
+
+  </div>
+</div>
+{% endfor %}
+
+<div class="container-fluid">
+  <div class="panel panel-default">
+  <div class="panel-body">
+      <div class="row d-flex justify-content-center">
+    <nav aria-label="..." style="font-size: 30px; text-align: center; word-spacing: 20px;">
+  <div class="pagination">
+    <ul class="pagination">
+      <li class="page-item disabled">
+        <span class="step-links">
+        {% if page.has_previous %}
+            <a href="?page=1">&laquo; First_Page</a>
+            <a href="?page={{ page.previous_page_number }}">Previous|</a>
+        {% endif %}
+    </li>
+    <li>
+      <span class="current" style="margin-left: 10px; font-weight: bold;">
+            Page {{ page.number }} of {{ page.paginator.num_pages }}.
+      </span>
+        <span>
+
+        {% if page.has_next %}
+            <a href="?page={{ page.next_page_number }}">Next_Page</a>
+            <a href="?page={{ page.paginator.num_pages }}">Last_Page &raquo;</a>
+        {% endif %}
+      </span>
+    </li>
+    </ul>
+  </div>
+  </nav>
+  </div>
+
+  </div>
+</div>
+  
+  
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+{% endblock %}
