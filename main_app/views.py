@@ -13,11 +13,9 @@ from django.contrib.sessions.models import Session
 # 0x5ac9E6205eACA2bBbA6eF716FD9AabD76326EEee
 # bc8dc5e6a822e3864d951b60a35e91df05781dacc4168b1b63b61eb6ba44612e
 
-url = 'https://ropsten.infura.io/v3/d4de0da2227146e5836fbe0d55c017c7'
+url = 'https://ropsten.infura.io/v3/<YOUR INFURA API KEY GOES HERE>'
 web3 = Web3(Web3.HTTPProvider(url))
-# account_address = web3.toChecksumAddress("0x74415Bc4C4Bf4Baecc2DD372426F0a1D016Fa924")
-# key='399acb7b0b8c1d5b85815ca5e9f24e36971214df28e976d7d7b04b5233befb6a'
-# bc8dc5e6a822e3864d951b60a35e91df05781dacc4168b1b63b61eb6ba44612e
+
 address = web3.toChecksumAddress("0x0231CE2f680d4986DE84E55f2a72cBade878B774")
 abi = json.loads('''[
 	{
