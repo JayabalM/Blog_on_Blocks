@@ -8,11 +8,6 @@ from django.core.paginator import Paginator
 from django.shortcuts import render,redirect,HttpResponse
 from django.contrib.sessions.models import Session
 
-
-
-# 0x5ac9E6205eACA2bBbA6eF716FD9AabD76326EEee
-# bc8dc5e6a822e3864d951b60a35e91df05781dacc4168b1b63b61eb6ba44612e
-
 url = 'https://ropsten.infura.io/v3/<YOUR INFURA API KEY GOES HERE>'
 web3 = Web3(Web3.HTTPProvider(url))
 
