@@ -7,8 +7,12 @@
   <div class="card text-center mt-4">
   <div class="card-header float-left">
     <div class="row d-flex justify-content-between">
-      {% if p.1 %}
-      <p>FOR SALE</p>
+      <div>
+         {% if p.1 %}
+      <p style="font-size: 20px; font-weight: bold;" >FOR SALE</p>
+      <p>BLOG ID-{{p.0}}</p>
+      </div>
+     
       {% else %}
         <p>FREE CONTENT</p>
       {% endif %}
