@@ -41,21 +41,6 @@
         <a class="nav-link disabled" href="#">Disabled</a>
       </li>
     </ul>
-    <div class="row">
-      <div class="form-inline my-2 my-lg-0">
-      <label>PUBLIC KEY: </label>{{address}}</label>
-       <label>BALANCE: </label>{{balance}}</label>
-      </div>
-    </div>
-  <!--   <div class="row">
-      <div class="form-inline my-2 my-lg-0">
-      {{balance}}
-      </div>
-    </div> -->
-    </div>
-    <br>
-    
-    
  </div>
 </nav>
    
@@ -65,8 +50,29 @@
         <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
       </div>
     </div>
+<div class="row d-flex justify-content-between">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">YOUR PUBLIC ADDRESS</h5>
+        <p class="card-text">Your public address is your identity over the network. Use it receive funds.</p>
+        <a href="#" class="btn btn-primary" id="pub" style="font-size: 20px">PUBLIC KEY APPEARS HERE</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">CURRENT BALANCE</h5>
+        <p class="card-text"></p>
+        <a href="#" class="btn btn-primary" id="bal">BALANCE SHOWS UP HERE</a>
+      </div>
+    </div>
+  </div>
+</div>
+
     <div class="container">
-      <div class="row d-flex justify-content-between">
+      <div class="row d-flex justify-content-between" style="margin-top: 100px">
         <div class="col-md-6 col-lg-4"> 
           <div class="card">
             <img class="card-img-top" src="{% static 'bl_linked.png' %}" alt="Card image cap">
