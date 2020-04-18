@@ -181,6 +181,7 @@ window.addEventListener('load', ()=>{
   }
   web3= new Web3(window.web3.currentProvider);
   ethereum.enable();
+
 });
 
 
@@ -192,7 +193,15 @@ bob=web3.eth.contract(abi).at(c_address)
 web3.eth.getAccounts(function get(err, res){            
       account=res[0]
       console.log(account)
+      $("#pub").text(account)
 
-  });
-
+       web3.eth.getBalance(account, function (error, wei) {
+    if (!error) {
+        // var balance = wei;
+        var balance = web3.fromWei(wei, 'ether');
+        bal = `${balance.toString()}  ETH`
+        $("#bal").text(bal)
+      }
+});
+});
 
