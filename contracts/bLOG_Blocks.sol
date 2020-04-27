@@ -1,4 +1,4 @@
-aragma solidity ^0.5.1; solidity ^0.5.1;
+paragma solidity ^0.5.1; solidity ^0.5.1;
 
 contract SocialNetwork{
     //STATE VARIABLES
