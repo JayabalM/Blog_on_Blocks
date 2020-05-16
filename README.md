@@ -62,6 +62,9 @@ Step 3: Paste your API-KEY on Line 11
 ### Making a Payment with Ether
 ![gif(1)](https://user-images.githubusercontent.com/42082608/82125824-45e25100-97c6-11ea-93c7-41d852ca9b4a.gif)
 
+### Validating Transaction Receipt and Buying The Content
+![gif(2)](https://user-images.githubusercontent.com/42082608/82126670-c192cc80-97cb-11ea-803e-458ecfd4a038.gif)
+
 
 ## Author
 
