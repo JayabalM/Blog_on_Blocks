@@ -16,6 +16,6 @@ Blockchain based Content Selling Platform, built on Ethereum, where writers can 
 
 ### License
 
-MIT License: http://adampritchard.mit-license.org/ or see [the `LICENSE` file](https://github.com/zaryab2000/trAck_COVID19_LiVe_dAta/blob/master/LICENSE).
+MIT License: http://adampritchard.mit-license.org/ or see [the `LICENSE` file](https://github.com/zaryab2000/Blog_on_Blocks/blob/master/LICENSE).
 
 #### Copyright © 2020, [Zaryab Afser](https://github.com/zaryab2000)
