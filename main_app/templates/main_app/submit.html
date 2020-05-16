@@ -11,12 +11,41 @@
     <title>BLOG ON BLOCKS!</title>
   </head>
   <body >
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-inverse" style="background-color: #00CED1; ">
+          <div class="container">
+          <a class="navbar-brand" href="{% url 'connect' %}">BOB</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="{% url 'connect' %}">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Buy Content</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+ </div>
+</nav>
 
 <div class="container">
 
   <div class="form-row">
-    <div class="form-group col-md-6" style="margin-top: 20px;">
+    <div class="form-group col-md-6" style="margin-top: 60px;">
       <label for="inputEmail4">Title</label>
       <input id="title" name="title" class="form-control" placeholder="ADD A CATCHY TITLE HERE">
     </div>
@@ -31,7 +60,7 @@
   </div>
   
   <div class="form-group" style="margin-top: 20px; text-align: center;">
-     <label>SELL THIS BLOG</label><input id="for_sale" name="for_sale" type="checkbox" checked data-toggle="toggle" data-on="YES" data-off="NO" data-size="md">
+     <label style="font-size: 30px">SELL THIS BLOG</label><input style="width: 20px; height: 20px; margin-left: 30px" id="for_sale" name="for_sale" type="checkbox" checked data-toggle="toggle" data-on="YES" data-off="NO" data-size="md">
   </div>
   </div>
   <div class="row col-lg-4 col-md-4 d-flex justify-content-center" style="margin-bottom: 50px; style=margin-top: 50px; ">
@@ -51,9 +80,11 @@
 
 
 <!-- Footer -->
-<footer class="page-footer font-small teal pt-4" style="background:DarkTurquoise;">
+<div class="bottom">
 
-  <!-- Footer Text -->
+<footer class="page-footer font-small blue pt-4" style="background:DarkTurquoise;">
+
+  <!-- Footer Links -->
   <div class="container-fluid text-center text-md-left">
 
     <!-- Grid row -->
@@ -63,10 +94,11 @@
       <div class="col-md-6 mt-md-0 mt-3">
 
         <!-- Content -->
-        <h5 class="text-uppercase font-weight-bold">Footer text 1</h5>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita sapiente sint, nulla, nihil
-          repudiandae commodi voluptatibus corrupti animi sequi aliquid magnam debitis, maxime quam recusandae
-          harum esse fugiat. Itaque, culpa?</p>
+        <h5 class="text-uppercase" align="text-center">Blog and Earn with Blockchain</h5>
+        <p>Blockchain based Content Selling Platform, built on Ethereum, where writers can sell their articles in exchange for Cryptocurrencies.<br><br>
+
+        <a href="https://github.com/zaryab2000/Blog_on_Blocks" class="btn btn-primary" style="background-color: black;">Contribute On Github</a>
+        </p>
 
       </div>
       <!-- Grid column -->
@@ -74,29 +106,37 @@
       <hr class="clearfix w-100 d-md-none pb-3">
 
       <!-- Grid column -->
-      <div class="col-md-6 mb-md-0 mb-3">
+      <div class="col-md-3 mb-md-0 mb-3">
 
-        <!-- Content -->
-        <h5 class="text-uppercase font-weight-bold">Footer text 2</h5>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio deserunt fuga perferendis modi earum
-          commodi aperiam temporibus quod nulla nesciunt aliquid debitis ullam omnis quos ipsam, aspernatur id
-          excepturi hic.</p>
+        <!-- Links -->
+        <h5 class="text-uppercase">Developer</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="https://github.com/zaryab2000/" class="btn btn-primary" style="background-color: black;">Zaryab Afser</a>
+          </li>
+        </ul>
 
       </div>
+      <div class="col-md-3 mb-md-0 mb-3">
+
       <!-- Grid column -->
 
     </div>
     <!-- Grid row -->
 
   </div>
-  <!-- Footer Text -->
+  <!-- Footer Links -->
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+  <div class="footer-copyright text-center py-3">© 2020 Copyright: Zaryab Afser
+    <a href="https://github.com/zaryab2000/Blog_on_Blocks">Blog_On_Blocks</a>
   </div>
   <!-- Copyright -->
+
 </footer>
+<!-- Footer -->
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
