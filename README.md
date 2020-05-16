@@ -22,6 +22,39 @@ All the payments shall be done via cryptocurrencies and will be reflected direct
 **Elimination of Third Party Interference**
 
 The platform neither uses a central server nor does it require any middle man to verify the transactions. Therefore, it is designed in a way that there is no Third Party that lies in between and the writer gets the amount that he deserves without wasting any part of it to third parties.
+
+## Requirements 
+
+#### Web Browser with Metamask Extension
+
+Step 1. Go to the [Metamask website](https://metamask.io).
+
+Step 2. Click “Get Chrome Extension” to install Metamask.
+
+Step 3. Click “Add to Chrome” in the upper right.
+
+Step 4. Click “Add Extension” to complete the installation.
+
+#### Get a Ropsten Api Key
+
+Step 1. Go to [Infura.io](https://infura.io/?utm_source=blog&utm_medium=Tutorial:%20Getting%20Started&utm_campaign=Tutorials)
+
+Step 2. Follow the steps mentioned here to get an Api key [Steps to get Infura Api](https://blog.infura.io/getting-started-with-infura-28e41844cc89/) 
+
+#### Set your API-KEY to Views.py
+```
+Step 1: Go to main_app
+
+Step 2: Go to views.py
+
+Step 3: Go to Line 11 in views.py
+
+url = 'https://ropsten.infura.io/v3/<PASTE YOUR API KEY HERE>'
+
+Step 3: Paste your API-KEY on Line 11
+```
+
+
 ### Payment in Blog_on_Blocks
 
 
