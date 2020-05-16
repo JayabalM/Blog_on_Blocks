@@ -7,7 +7,7 @@ In simple words, Blog on Blocks has been developed with a very ***basic idea of 
 
 In this platform, the writer can not only write their articles, solutions, or any kind of quality content but also *get to choose whether he/she wish to publish it for free or make it for sale.*
 
-Just in case the writer chooses to sell his/her content, the** *writer is the one with complete control of the money earned from his content and no third party shall have a piece of the pie.***
+Just in case the writer chooses to sell his/her content, the ***writer is the one with complete control of the money earned from his content and no third party shall have a piece of the pie.***
 
 ## What Purpose Does It Serve
 
