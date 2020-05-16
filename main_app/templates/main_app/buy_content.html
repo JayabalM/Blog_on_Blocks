@@ -4,6 +4,7 @@
 {% for p in page %}
 <div class="container">
   
+  <h2 style="margin-top: 30px">{{total}} Blogs available For Sale.<br>Buy the one that suits you</h2>
   <div class="card text-center mt-4">
   <div class="card-header float-left">
     <div class="row d-flex justify-content-between">
@@ -33,7 +34,7 @@
       </div>
     {% else %}
       <div class="row d-flex justify-content-between">
-           <a href="{% url 'payment' p.0 %}" class="btn btn-primary">TIP AUTHOR</a>
+            <a href="url 'payment' p.0" class="btn btn-primary">TIP THE AUTHOR</a>
     {% if p.1 %}
       <a href="{% url 'payment' p.0 %}" class="btn btn-primary">BUY CONTENT</a>
     {% else %}

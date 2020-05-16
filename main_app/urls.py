@@ -7,6 +7,7 @@ urlpatterns = [
     path('payment/get_receipt/<int:pid>', views.get_receipt, name="receipt"),
     path('submit/',views.append,name='submit'),
     path('posts/', views.posts,name='posts'),
+    path('buy_content/',views.buy_content,name='buy_content'),
     path('get_free_post/<int:pid>', views.get_free_post,name='get_free_post'),
     path('payment/get_post/<int:pid>', views.get_post,name='get_post'),
     path('payment/<int:pid>' ,views.payment, name='payment'),

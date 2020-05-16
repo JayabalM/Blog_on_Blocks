@@ -308,6 +308,28 @@ def get_pdf(request,pid, *args, **kwargs):
 
 	return Render.render('main_app/get_post.html', context)
 
+def buy_content(request):
+	posts = []
+	all_posts = get_posts_from_contract()
+	# print(f'{posts[1][1]}\n\n')
+	for post in all_posts:
+		if post[1]:
+			posts.append(post)
+
+	posts.sort(key = lambda x: x[2], reverse=True)
+	total = len(posts)
+
+	paginator = Paginator(posts,5)
+	page_number =  request.GET.get('page')
+	page_obj = paginator.get_page(page_number)
+
+	context={
+		'page':page_obj,
+		'posts':posts,
+		'total':total
+	}
+
+	return render(request,'main_app/buy_content.html',context)
 
 
 
