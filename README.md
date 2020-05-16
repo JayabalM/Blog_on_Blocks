@@ -55,8 +55,7 @@ Step 3: Paste your API-KEY on Line 11
 ```
 
 
-### Payment in Blog_on_Blocks
-
+### Publishing an article on Blockchain
 
 ![gif](https://user-images.githubusercontent.com/42082608/82114194-d3974f80-9778-11ea-83e4-eb2a07d8c02a.gif)
 
