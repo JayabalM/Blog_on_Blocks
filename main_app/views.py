@@ -8,7 +8,7 @@ from django.core.paginator import Paginator
 from django.shortcuts import render,redirect,HttpResponse
 from django.contrib.sessions.models import Session
 
-url = 'https://ropsten.infura.io/v3/<YOUR API KEY GOES HERE>'
+url = 'https://ropsten.infura.io/v3/d4de0da2227146e5836fbe0d55c017c7'
 web3 = Web3(Web3.HTTPProvider(url))
 
 address = web3.toChecksumAddress("0x0231CE2f680d4986DE84E55f2a72cBade878B774")
