@@ -1,7 +1,17 @@
 # Blog_on_Blocks
 Blog on Blocks is a decentralized application, built on Ethereum Blockchain, that serves as an online marketplace where writers and content creators can not only write their contents on the Blockchain but also sell it to their target audience in exchange for cryptocurrency, i.e., Ether.
 
-## Why Blog On Blocks(BoB) ?
+## Background
+One can never deny the fact that the blogging or content sharing platforms that exists today includes two major issues for the content creators.
+* The contents developed by the writers are either simply published on the platforms with no rewards for the writers, irrespective of the quality of the contents.
+
+* Even if the writers get rewarded for their work, the publication or the blogging platform charges their commission.This ultimately makes the writer unable to earn the rewards that he/she deserves.
+
+Now, considering the fact that any quality content demands an enormous amount of time and devotion to be completed, the writers also needs a better system that facilitates their income through these contents.
+
+In fact, if we fail to design a proper financial system for such content developers then its quite inevitable that the quality of contents will enormously decrease.
+
+### Why Blog On Blocks(BoB) ?
 
 In simple words, Blog on Blocks has been developed with a very ***basic idea of delivering utmost financial benefit to the content creators or writers*** that they deserve ***without any interference of Third Party***
 
